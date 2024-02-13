@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.display-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <!-- global message --> */
+.global {
+  background: orange;
+  padding: 20px 0;
+}
+
+.global > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <!-- Header menu --> */
+
+header {
+  background: blue;
+  color: white;
+  padding: 10px 0;
+}
+
+/* header > div {
+    display: flex;
+    justify-content: space-between;
+   } */
+.logo {
+  background: white;
+  color: blue;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > div {
+  border: 3px dotted blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 24px;
+}
+header ul li {
+  margin-left: 16px;
+}
+
+header ul li:hover {
+  background: red;
+  cursor: pointer;
+  /* font-size: 32px; */
+  transform: scale(1.5);
+}
+/* <!-- Hero section --> */
+
+.hero {
+  background: url(./assets/hero.jpg) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10%;
+  color: white;
+}
+
+.hero h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- latest post --> */
+
+.latest {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest h2 {
+  margin-bottom: 10px;
+}
+
+.div1 {
+  flex: 3;
+  padding: 10px;
+}
+
+.div2 {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.div2 h3 {
+  color: blue;
+}
+
+.nested {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nested a {
+  align-self: flex-end;
+  height: 30px;
+  border-radius: 10%;
+  background-color: orange;
+  align-items: center;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.div4 {
+  background-color: rgb(77, 235, 24);
+  border-radius: 5%;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.div5 {
+  background-color: rgb(243, 243, 164);
+  border-radius: 5%;
+}
+
+.latest img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.latest ul {
+  padding: 20px;
+}
+
+.latest ul li {
+  margin-bottom: 5px;
+}
+
+/* <!--Recommendation --> */
+
+.recomendation {
+  padding: 20px;
+  background-color: rgb(243, 243, 164);
+}
+.maindiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.div-r1,
+.div-r2,
+.div-r3 {
+  background-color: white;
+  flex: 1 1 calc(33.33% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.div-r4 {
+  background-color: white;
+  flex-basis: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.recomendation img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nested2 {
+  padding: 20px;
+}
+
+.nested2 a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+/* <!-- Subscription form --> */
+
+#subscribe {
+  padding-bottom: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- footer --> */
+.footer {
+  background: black;
+  color: white;
+}
